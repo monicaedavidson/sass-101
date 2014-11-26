@@ -1,0 +1,148 @@
+//colors
+$white: #ffffff;
+$black: black;
+$gray: #999999;
+$orange: #ff6600;
+$tan: #ff944c;
+$red: #7f3300;
+$green: #aac8b0;
+$brown: #7F3300;
+$bg-color: #FFFFFF;
+ 
+//fonts
+$font_0: Constantia;
+$font_1: Lucida Bright;
+$font_2: DejaVu Serif;
+$font_3: Georgia;
+$font_4: serif;
+
+//style
+$height_a: auto;
+$width_a: auto;
+$text_decor: none;
+$text_decor_line: underline;
+$font_weight_b: bold;
+$display_b: block;
+$margin_t: .5em;
+ 
+ 
+@charset "utf-8";
+title {
+  font-style: italic;
+  font-weight: $font_weight_b;
+  font-size: .8em;
+}
+.responsive-image {
+  height: $height_a;
+  width: $width_a;
+}
+.responsive-imagetwo {
+  height: $height_a;
+  width: $width_a;
+  padding-top: .05px;
+}
+.main {
+  width: 50%;
+  min-width: 740px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $bg-color;
+}
+p {
+  color: $black;
+  font-family: $font_0, $font_1, $font_2, $font_3, $font_4;
+  font-style: normal;
+  font-weight: 400;
+}
+article {
+  padding-right: 20px;
+  width:$width_a;
+  float: right;
+  height: $height_a;
+}
+figure {
+  display: $display_b;
+  margin-top: $margin_t;
+  width: $width_a;
+  padding-left: 1em;
+  img {
+    padding: 10px;
+    box-shadow: 1px 1px 15px $gray;
+  }
+}
+figcaption {
+  font-size: 0.875em;
+  font-weight: $font_weight_b;
+  text-align: center;
+  display: $display_b;
+  margin-top: $margin_t;
+  width: $width_a;
+  padding-bottom: 2em;
+}
+footer {
+  padding-top: 105px;
+  padding-bottom: 6px;
+  padding-left: 2%;
+  background-color: $bg-color;
+  color: $black;
+  clear: left;
+  font-size: .8em;
+}
+a {
+  font-weight: $font_weight_b;
+  text-decoration: $text_decor;
+  &:link {
+    color: $orange;
+  }
+  &:visited {
+    color: $tan;
+  }
+  &:hover {
+    color: $red;
+    text-decoration: $text_decor_line;
+  }
+  &:active {
+    color: $red;
+    text-decoration: $text_decor_line;
+  }
+  &:focus {
+    color: $red;
+    text-decoration: $text_decor_line;
+  }
+}
+.table {
+  display: table;
+  margin: 0 auto;
+}
+.thispage {
+  height: $height_a;
+  width: $width_a;
+}
+ul#horizontal-list {
+  min-width: 696px;
+  list-style: none;
+  padding-top: 20px;
+  li {
+    display: inline;
+    margin: 45px;
+  }
+}
+nav a {
+  &:hover {
+    background-color: $green;
+    text-decoration: $text_decor;
+  }
+  &:active {
+    background-color: $green;
+    text-decoration: $text_decor;
+  }
+  &:focus {
+    background-color: $green;
+    text-decoration: $text_decor;
+  }
+  &.thispage {
+    background-color: $green;
+    text-decoration: $text_decor;
+  }
+}
